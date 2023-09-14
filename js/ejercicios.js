@@ -4,26 +4,18 @@ Crear una función que reciba un string con una fecha en formato 'YYYY-MM-DD' y 
 
 Pedir al usuario su nombre y su fecha de nacimiento. Luego, mostrar en la consola un mensaje que diga "Hola [nombre], tienes [edad] años!"
 */
-function calcularEdad() {
-    const nombre = prompt('Por favor, ingresa tu nombre:');
-    const fechaNacimiento = prompt('Por favor, ingresa tu fecha de nacimiento en formato YYYY-MM-DD:');
-    var fechaNacimientoDate = new Date(fechaNacimiento);
-    var fechaActual = new Date();
-    const edad = fechaActual.getFullYear() - fechaNacimientoDate.getFullYear();
-    if (
-      fechaNacimientoDate.getMonth() > fechaActual.getMonth() ||
-      (fechaNacimientoDate.getMonth() === fechaActual.getMonth() &&
-        fechaNacimientoDate.getDate() > fechaActual.getDate())
-    ) {
-      edad--;
-    }
-    console.log('Hola ' + nombre + ', tienes ' + edad + ' años!');
-
+function calcularEdad(fechaNacimiento) {
+  var fechaNacimientoDate = new Date(fechaNacimiento);
+  var fechaActual = new Date();
+  const edad = fechaActual.getFullYear() - fechaNacimientoDate.getFullYear();
+  if(fechaNacimientoDate.getMonth() > fechaActual.getMonth() || (fechaNacimientoDate.getMonth() === fechaActual.getMonth() && fechaNacimientoDate.getDate() > fechaActual.getDate())) 
+  {
+    edad--;
+  }
+  return edad;
 }
-  
-const edad = calcularEdad();
 
-  
+/*
 const frutas = ["manzana", "pera", "durazno", "kiwi", "pomelo", "sandia", "uva", "banana", "ciruela", "melon"] ;
 
 
@@ -42,3 +34,4 @@ const Ciudad = {
     extension: 1000000
 
 }
+*/
