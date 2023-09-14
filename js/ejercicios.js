@@ -10,8 +10,6 @@ function calcularEdad() {
     var fechaNacimientoDate = new Date(fechaNacimiento);
     var fechaActual = new Date();
     const edad = fechaActual.getFullYear() - fechaNacimientoDate.getFullYear();
-    
-    // Ajustar la edad si el cumpleaños aún no ha ocurrido este año
     if (
       fechaNacimientoDate.getMonth() > fechaActual.getMonth() ||
       (fechaNacimientoDate.getMonth() === fechaActual.getMonth() &&
@@ -23,13 +21,7 @@ function calcularEdad() {
 
 }
   
-  // Solicitar el nombre y la fecha de nacimiento al usuario
-
-  
-  // Calcular la edad del usuario utilizando la función calcularEdad
-  const edad = calcularEdad();
-  
-  // Mostrar el mensaje con la edad calculada
+const edad = calcularEdad();
 
   
 const frutas = ["manzana", "pera", "durazno", "kiwi", "pomelo", "sandia", "uva", "banana", "ciruela", "melon"] ;
