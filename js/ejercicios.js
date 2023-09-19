@@ -38,12 +38,47 @@ function Existfrutas(EleccionFruta){
   }  
 }
 
+/*A. Comparar si 10 es igual a '10' con ==
 
-const Ciudad = {
-    nombre: "",
-    FechaFundacion:12/02/1987 ,
-    poblacion:10 ,
-    extension: 1000000
+B. Comparar si 10 es igual a '10' con ===. ¿Qué diferencias encontrás?
 
+C. ¿De qué tipo de dato es 10.6?
+
+D. ¿Es cierto que para JavaScript true es == 1? ¿Qué conclusiones podemos obtener?*/
+
+function Comparar_A() {
+  const numero = 10;
+  const frase = '10';
+  var igual = false;
+  if(numero == frase) return igual = true;
+  else return igual;
+}
+function Comparar_B() {
+  const numero = 10;
+  const frase = '10';
+  var igual = false;
+  if(numero === frase) return igual = true;
+  else return igual;
 }
 
+/*Crear un objeto de tipo ciudad con los campos: nombre, fechaFundacion, poblacion, extensión. 
+
+Recorrer y mostrar todos las claves y valores por separado del objeto ciudad.
+
+Opcional : Validar todos los ingresos de datos (prompts) */
+
+const Ciudad = {
+  nombre: "",
+  FechaFundacion:12/02/1987 ,
+  poblacion:10 ,
+  extension: 1000000
+}
+
+/*Crear una función que, a raíz de recibir por parámetro un array de números, 
+
+cree un nuevo array donde cada elemento sea el doble del elemento correspondiente en el array original.*/
+
+function Doble_elementos(arrayRecibido) {
+  const arrayDuplicados = arrayRecibido.map(arrayRecibido => arrayRecibido*2);
+  return arrayDuplicados;
+}
