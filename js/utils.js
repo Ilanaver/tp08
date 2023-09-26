@@ -1,4 +1,4 @@
-/*
+//1
 console.log("ejercicio 1");
 const nombre = prompt("Por favor, ingresa tu nombre:");
 const fechaNacimiento = prompt("Por favor, ingresa tu fecha de nacimiento en formato YYYY-MM-DD:");
@@ -25,10 +25,24 @@ let conclusion = "La conclusion a la que llegamos es que es 1 porque las computa
 Por lo que podemos comprender en base a esto que 0 es false.";
 console.log(conclusion);
 
-//4
-
+/*4
+const Ciudad = {
+    nombre: "",
+    FechaFundacion:12/02/1987 ,
+    poblacion:10 ,
+    extension: 1000000
+  }
+  const Ciudades = MostrarCiudades(Ciudad);
+  console.log(Ciudades)
 */
 //5
 const arrayRecibido = [2, 4, 6, 8, 10];
 const arrays = Doble_elementos(arrayRecibido);
 console.log(arrays);
+
+//6
+
+//7
+let nombresRecibidos = prompt("ingrese una lista de nombres separados por coma.");
+const devolvernombres = nombresA(nombresRecibidos);
+console.log(devolvernombres);
