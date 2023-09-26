@@ -25,23 +25,28 @@ let conclusion = "La conclusion a la que llegamos es que es 1 porque las computa
 Por lo que podemos comprender en base a esto que 0 es false.";
 console.log(conclusion);
 
-/*4
+//4
 const Ciudad = {
     nombre: "",
     FechaFundacion:12/02/1987 ,
     poblacion:10 ,
-    extension: 1000000
+    extension: 1000000 ,
+    nombre: "",
+    FechaFundacion:22/07/1999 ,
+    poblacion:10000 ,
+    extension: 2129348 
   }
   const Ciudades = MostrarCiudades(Ciudad);
-  console.log(Ciudades)
-*/
+  console.log(Ciudades);
+  
 //5
 const arrayRecibido = [2, 4, 6, 8, 10];
 const arrays = Doble_elementos(arrayRecibido);
 console.log(arrays);
 
 //6
-
+let pregunta = prompt("¿De que altura queres que sea  el triangulo?")
+pregunta = parseInt(pregunta);
 //7
 let nombresRecibidos = prompt("ingrese una lista de nombres separados por coma.");
 const devolvernombres = nombresA(nombresRecibidos);

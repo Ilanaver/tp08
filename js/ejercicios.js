@@ -65,15 +65,15 @@ function Comparar_B() {
 
 Recorrer y mostrar todos las claves y valores por separado del objeto ciudad.
 
-Opcional : Validar todos los ingresos de datos (prompts) 
+Opcional : Validar todos los ingresos de datos (prompts) */
 
-const Ciudad = {
-  nombre: "",
-  FechaFundacion:12/02/1987 ,
-  poblacion:10 ,
-  extension: 1000000
+  function MostrarCiudades(Ciudad){
+    for(let i = 0; i < Ciudad.length; i++){
+      i = Ciudad;
+      console.log(i)
+    }
+
 }
-*/
 /*Crear una función que, a raíz de recibir por parámetro un array de números, 
 
 cree un nuevo array donde cada elemento sea el doble del elemento correspondiente en el array original.*/
@@ -84,15 +84,18 @@ function Doble_elementos(arrayRecibido) {
 }
 
 /*¿Cómo harías para dibujar en la consola el siguiente triángulo de asterisco?
-
-function name(params) {
-  
+(a)*/
+function TrianguloAsteriscos(){
+  for (let i = 0; i < ; index++) {
+    const element = array[index];
+    
 }
-*/
+}
+
 /*Se debe solicitar al usuario que ingrese una lista de nombres separados por coma. Luego, muestra en el DOM los nombres que comienzan con la letra 'A'.*/
 function nombresA(nombresRecibidos) {
   let nombresSeparados = nombresRecibidos.split(',');
   console.log(nombresSeparados);
-  let nombresConA = nombresSeparados.filter(nombres => nombres.toUpperCase().startsWith() === 'A');
+  let nombresConA = nombresSeparados.filter(nombres => nombres.toUpperCase().startsWith("A"));
   return nombresConA;
 }
