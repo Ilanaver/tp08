@@ -114,3 +114,9 @@ function nombresA(nombresRecibidos) {
   let nombresConA = nombresSeparados.filter(nombres => nombres.toUpperCase().startsWith("A"));
   return nombresConA;
 }
+/*Se debe solicitar al usuario que ingrese una cadena de texto, una palabra que desea reemplazar y la palabra de reemplazo. Luego, muestra en el DOM la cadena resultante después de reemplazar todas las instancias de la palabra especificada.*/
+function frase(texto,ElegirPalabra,PalabraRemplazar){
+  const textoModificado = texto.replace( PalabraElegida,PalabraRemplazar);
+  return textoModificado;
+}
+/*no remplaza la palabra*/

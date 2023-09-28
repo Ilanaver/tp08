@@ -55,4 +55,12 @@ for (let nombre of devolvernombres) {
   result.innerHTML += nombre + "<br>";
 }
 //8
-let texto = prompt("")
+const texto = prompt("Escriba un texto")
+const textoMinusculas = texto.toLocaleLowerCase();
+let ElegirPalabra = prompt("Elija la palabra que quiere camiar")
+
+let PalabraRemplazar = prompt("¿por que parabra la quiere remplazar?")
+let result8 = document.getElementById("Resultado8");
+result8.innerHTML = frase(texto,ElegirPalabra,PalabraRemplazar);
+
+
