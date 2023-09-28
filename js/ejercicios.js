@@ -86,7 +86,7 @@ function Doble_elementos(arrayRecibido) {
 /*¿Cómo harías para dibujar en la consola el siguiente triángulo de asterisco?
 (a)*/
 function TrianguloAsteriscos(){
-  for (let i = 0; i < ; index++) {
+  for (let i = 0; i < 0; index++) {
     const element = array[index];
     
 }
