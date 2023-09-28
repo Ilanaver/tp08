@@ -85,11 +85,14 @@ function Doble_elementos(arrayRecibido) {
 
 /*¿Cómo harías para dibujar en la consola el siguiente triángulo de asterisco?
 (a)*/
-function TrianguloAsteriscos(){
-  for (let i = 0; i < ; index++) {
-    const element = array[index];
-    
-}
+function dibujarTriangulo(filas) {
+  for (let i = 1; i <= filas; i++) {
+      let asteriscos = '';
+      for (let j = 1; j <= i; j++) {
+          asteriscos += '*';
+      }
+      console.log(asteriscos);
+  }
 }
 
 /*Se debe solicitar al usuario que ingrese una lista de nombres separados por coma. Luego, muestra en el DOM los nombres que comienzan con la letra 'A'.*/
