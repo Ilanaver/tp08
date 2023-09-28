@@ -45,8 +45,8 @@ const arrays = Doble_elementos(arrayRecibido);
 console.log(arrays);
 
 //6
-let pregunta = prompt("¿De que altura queres que sea  el triangulo?")
-pregunta = parseInt(pregunta);
+let filas = prompt("¿De que altura queres que sea  el triangulo?")
+let filas2 = prompt("¿de que altura quiere el segundo triangulo?")
 //7
 let nombresRecibidos = prompt("ingrese una lista de nombres separados por coma.");
 const devolvernombres = nombresA(nombresRecibidos);
@@ -56,9 +56,11 @@ for (let nombre of devolvernombres) {
 }
 
 //8
+let texto = prompt("");
 
 //9
 let cadena = prompt("Ingrese una cadena de texto");
 let number = prompt("Ingrese un numero");
 let result9 = document.getElementById("Resultado9");
 result9.innerHTML = TextoCortado(cadena, number);
+

@@ -85,10 +85,25 @@ function Doble_elementos(arrayRecibido) {
 
 /*¿Cómo harías para dibujar en la consola el siguiente triángulo de asterisco?
 (a)*/
-function TrianguloAsteriscos(){
-  for (let i = 0; i < 0; index++) {
-    const element = array[index];
-    
+function dibujarTriangulo(filas) {
+  for (let i = 1; i <= filas; i++) {
+      let asteriscos = '';
+      for (let j = 1; j <= i; j++) {
+          asteriscos += '*';
+      }
+      console.log(asteriscos);
+  }
+  
+}
+function dibujarTriangulo2(filas2)
+{
+  for (let i = filas2 - 1; i <= filas2; i+2) {
+    let asteriscos = '-';
+    for (let j = 1; j <= i; j+2) {
+        asteriscos += '*';
+    }
+    console.log(asteriscos);
+
 }
 }
 
