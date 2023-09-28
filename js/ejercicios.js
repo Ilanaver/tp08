@@ -99,3 +99,22 @@ function nombresA(nombresRecibidos) {
   let nombresConA = nombresSeparados.filter(nombres => nombres.toUpperCase().startsWith("A"));
   return nombresConA;
 }
+
+/*Se debe solicitar al usuario que ingrese una cadena de texto, una palabra que desea reemplazar y la palabra de reemplazo. 
+Luego, muestra en el DOM la cadena resultante después de reemplazar todas las instancias de la palabra especificada.*/
+function name(params) {
+  
+}
+
+/* Se debe solicitar al usuario que ingrese una cadena de texto y un número. 
+Luego, muestra en el DOM una nueva cadena que contenga los primeros caracteres de la cadena original, según el número proporcionado.*/
+function TextoCortado(cadena, number) {
+  let texto = cadena.slice(0, number);
+  return texto;
+}
+
+/*Se debe solicitar al usuario que ingrese una lista de elementos separados por coma. 
+Luego, muestra en el DOM un string que contenga todos los elementos del array separados por ' - '.*/
+function name(params) {
+  
+}

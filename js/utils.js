@@ -54,3 +54,11 @@ let result = document.getElementById("Resultado");
 for (let nombre of devolvernombres) {
   result.innerHTML += nombre + "<br>";
 }
+
+//8
+
+//9
+let cadena = prompt("Ingrese una cadena de texto");
+let number = prompt("Ingrese un numero");
+let result9 = document.getElementById("Resultado9");
+result9.innerHTML = TextoCortado(cadena, number);
