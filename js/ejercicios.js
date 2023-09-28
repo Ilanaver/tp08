@@ -93,6 +93,18 @@ function dibujarTriangulo(filas) {
       }
       console.log(asteriscos);
   }
+  
+}
+function dibujarTriangulo2(filas2)
+{
+  for (let i = filas2 - 1; i <= filas2; i+2) {
+    let asteriscos = '-';
+    for (let j = 1; j <= i; j+2) {
+        asteriscos += '*';
+    }
+    console.log(asteriscos);
+
+}
 }
 
 /*Se debe solicitar al usuario que ingrese una lista de nombres separados por coma. Luego, muestra en el DOM los nombres que comienzan con la letra 'A'.*/

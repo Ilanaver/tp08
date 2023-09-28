@@ -46,7 +46,13 @@ console.log(arrays);
 
 //6
 let filas = prompt("¿De que altura queres que sea  el triangulo?")
+let filas2 = prompt("¿de que altura quiere el segundo triangulo?")
 //7
 let nombresRecibidos = prompt("ingrese una lista de nombres separados por coma.");
 const devolvernombres = nombresA(nombresRecibidos);
-console.log(devolvernombres);
+let result = document.getElementById("Resultado");
+for (let nombre of devolvernombres) {
+  result.innerHTML += nombre + "<br>";
+}
+//8
+let texto = prompt("")
