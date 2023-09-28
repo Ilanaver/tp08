@@ -120,3 +120,33 @@ function frase(texto,ElegirPalabra,PalabraRemplazar){
   return textoModificado;
 }
 /*no remplaza la palabra*/
+
+/* Se debe solicitar al usuario que ingrese una cadena de texto y un número. 
+Luego, muestra en el DOM una nueva cadena que contenga los primeros caracteres de la cadena original, según el número proporcionado.*/
+function TextoCortado(cadena, number) {
+  let texto = cadena.slice(0, number);
+  return texto;
+}
+
+/*Se debe solicitar al usuario que ingrese una lista de elementos separados por coma. 
+Luego, muestra en el DOM un string que contenga todos los elementos del array separados por ' - '.*/
+function name(params) {
+  
+}
+
+/*Se le solicitará al usuario que ingrese una lista de objetos pedidos junto con sus respectivos totales, separados por coma. 
+Cada pedido se debe ingresar en el formato "nombre:total". Por ejemplo, un posible ingreso podría ser: "Pizza:15.50, Hamburguesa:8.75, Bebidas:4.25". 
+Luego, muestra en el DOM la recaudación total sumando todos los montos de los pedidos*/
+function CalcularRecaudacion(objetosPedidos) {
+  let objetosDivididos = objetosPedidos.split(', ');
+  let totalRecaudado = 0;
+
+  for (const pedido of objetosDivididos) {
+    const [nombre, total] = pedido.split(':');
+    const monto = parseFloat(total);
+    if (!isNaN(monto)) {
+        totalRecaudado += monto;
+    }
+  }
+  return totalRecaudado;
+}

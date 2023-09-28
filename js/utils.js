@@ -50,10 +50,11 @@ let filas2 = prompt("¿de que altura quiere el segundo triangulo?")
 //7
 let nombresRecibidos = prompt("ingrese una lista de nombres separados por coma.");
 const devolvernombres = nombresA(nombresRecibidos);
-let result = document.getElementById("Resultado");
+let result7 = document.getElementById("Resultado7");
 for (let nombre of devolvernombres) {
-  result.innerHTML += nombre + "<br>";
+  result7.innerHTML += nombre + "<br>";
 }
+
 //8
 const texto = prompt("Escriba un texto")
 const textoMinusculas = texto.toLocaleLowerCase();
@@ -64,3 +65,18 @@ let result8 = document.getElementById("Resultado8");
 result8.innerHTML = frase(texto,ElegirPalabra,PalabraRemplazar);
 
 
+
+
+//9
+let cadena = prompt("Ingrese una cadena de texto");
+let number = prompt("Ingrese un numero");
+let result9 = document.getElementById("Resultado9");
+result9.innerHTML = TextoCortado(cadena, number);
+
+//10
+
+//11
+let objetosPedidos = prompt("ingrese una lista de objetos pedidos junto con sus respectivos totales, separados por coma. \
+Un ejemplo es: 'Pizza:15.50, Hamburguesa:8.75, Bebidas:4.25'");
+let result11 = document.getElementById("Resultado11");
+result11.innerHTML = CalcularRecaudacion(objetosPedidos);
